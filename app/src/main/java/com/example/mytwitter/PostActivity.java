@@ -1,17 +1,5 @@
 package com.example.mytwitter;
 
-//import android.os.Bundle;
-//
-//import androidx.appcompat.app.AppCompatActivity;
-//
-//public class PostActivity extends AppCompatActivity {
-//
-//    @Override
-//    protected void onCreate(Bundle savedInstanceState) {
-//        super.onCreate(savedInstanceState);
-//        setContentView(R.layout.activity_post);
-//    }
-//}
 
 import android.app.ProgressDialog;
 import android.content.Intent;
@@ -183,7 +171,6 @@ public class PostActivity extends AppCompatActivity {
                 {
                     String userFullName = dataSnapshot.child("fullname").getValue().toString();
                     String userProfileImage = dataSnapshot.child("profileimage").getValue().toString();
-
                     HashMap postsMap = new HashMap();
                     postsMap.put("uid", current_user_id);
                     postsMap.put("date", saveCurrentDate);

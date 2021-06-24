@@ -93,7 +93,7 @@ public class RegisterActivity extends AppCompatActivity {
             loadingBar.setTitle("Creating New Account");
             loadingBar.setMessage("Please wait, while we are creating your new Account...");
             loadingBar.show();
-            loadingBar.setCanceledOnTouchOutside(true);//    even if user outsidely cancle ,it wont't be able to.
+            loadingBar.setCanceledOnTouchOutside(true);//
 
             mAuth.createUserWithEmailAndPassword(email, password)
                     .addOnCompleteListener(new OnCompleteListener<AuthResult>() {

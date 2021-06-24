@@ -4,5 +4,4 @@
     android:layout_height="wrap_content"
     android:id="@+id/main_app_bar"
     android:background="@color/colorPrimaryDark">
-
 </androidx.appcompat.widget.Toolbar>
